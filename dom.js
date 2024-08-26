@@ -1,3 +1,5 @@
+// <<<<<<<   START OF 1ST VIDEO - DOM BASICS >>>>>>>
+
 // EXAMINE THE DOCUMENT OBJECT
 // console.dir(document);
 // console.log(document.domain);
@@ -64,15 +66,29 @@
 // secondItem.style.color = 'coral'; // color of second Item was changed to coral
                                   // by using a nth-child pseudoselector 
 // <<< QUERY SELECTOR ALL >>> 
-const titles = document.querySelectorAll('.title');
-console.log(titles); // - returns a NodeList collection
-                     // - Array methods can be applied to a NodeList
-const odd = document.querySelectorAll('li:nth-child(odd)');
-const even = document.querySelectorAll('li:nth-child(even)');
-for (let i = 0; i < odd.length; i++) {
-    odd[i].style.backgroundColor = '#f4f4f4'; // changes bkg color of 
-                                              // ODD Items to grey
-    even[i].style.backgroundColor = 'coral'; // changes bkg color of 
-                                             // EVEN Items to coral
+// const titles = document.querySelectorAll('.title');
+// console.log(titles); // - returns a NodeList collection
+//                      // - Array methods can be applied to a NodeList
+// const odd = document.querySelectorAll('li:nth-child(odd)');
+// const even = document.querySelectorAll('li:nth-child(even)');
+// for (let i = 0; i < odd.length; i++) {
+//     odd[i].style.backgroundColor = '#f4f4f4'; // changes bkg color of 
+//                                               // ODD Items to grey
+//     even[i].style.backgroundColor = 'coral'; // changes bkg color of 
+//                                              // EVEN Items to coral
      
-} 
+// } 
+
+// <<<<<<< END OF 1ST VIDEO - DOM BASICS  >>>>>>>
+
+// <<<<<<< START OF 2ND VIDEO - TRAVERSING THE DOM >>>>>>>
+
+const itemList = document.querySelector('#items');
+// // parentNode 
+// console.log(itemList.parentNode);
+// itemList.parentNode.style.backgroundColor = '#f4f4f4';
+// console.log(itemList.parentNode.parentNode);
+// parentElement 
+console.log(itemList.parentElement);
+itemList.parentElement.style.backgroundColor = '#f4f4f4';
+console.log(itemList.parentElement);
