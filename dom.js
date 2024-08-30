@@ -215,11 +215,11 @@ const itemList = document.querySelector('#items');
 
 
 // Click Events 
-const button = document.getElementById('button');
-button.addEventListener(('mousedown', runEvent)
-function runEvent(e){
-  console.log('EVENT TYPE: '+e.type);
-}
-
+//const button = document.getElementById('button');
+//button.addEventListener('mousedown', runEvent)
+//function runEvent(e){
+//  console.log('EVENT TYPE: '+e.type);
+//}
+//
 
 
